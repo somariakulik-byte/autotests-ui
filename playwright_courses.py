@@ -27,7 +27,7 @@ with sync_playwright() as playwright:
     page.wait_for_url("**/dashboard", timeout=10000)
     print("✅ Регистрация успешна")
 
-   
+
     context.storage_state(path="browser-state.json")
     print("✅ Состояние сохранено")
 
